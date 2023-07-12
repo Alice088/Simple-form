@@ -1,0 +1,97 @@
+body {
+  background-image: url(/img/peakpx.jpg);
+}
+
+
+.form-element-1 h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4vh;
+  color: white;
+}
+
+
+.form-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.form-element-1 {
+  display: inline-flex;
+  height: 50%;
+  width: 50%;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.205);
+  border: rgba(255, 255, 255, 0.068) solid 0.5px;
+  border-radius: 15px;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.247);
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 1s;
+  backdrop-filter: blur(5px);
+}
+
+
+.form-element-1:hover {
+  box-shadow: 0 0 100px 5px rgba(18, 2, 240, 0.301);
+
+}
+
+
+input {
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(0, 0, 0, 0.205);
+  color: whitesmoke;
+  border: rgba(255, 255, 255, 0.123) solid 0.5px;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+  padding: 1px;
+  margin-bottom: 40px;
+  height: 10%;
+  font-size: 30px;
+}
+
+
+input:hover {
+  border-color:  rgba(255, 255, 255, 0.315);
+}
+
+
+button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.205);
+  border: rgba(255, 255, 255, 0.123) solid 0.5px;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+  height: 40%;
+  font-size: 30px;
+  
+  animation-name: bottun-color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+
+button:hover {
+  border-color: rgba(255, 255, 255, 0.315);
+  animation-play-state: paused;
+}
+
+
+@keyframes bottun-color{
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: rgba(255, 255, 255, 0.301);
+  }
+
+  100% {
+    color: white;
+  }
+}
